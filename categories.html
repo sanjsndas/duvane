@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categories · Duvane Architectural Matter</title>
+  <meta name="description" content="Browse all categories — interior design, architecture, materials, lighting, small spaces, and more. Independent editorial from Duvane Architectural Matter.">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Categories · Duvane Architectural Matter">
+  <meta property="og:description" content="Explore our full range of categories covering architecture, interiors, materials and design culture.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.duvanearchitectural.com/categories.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=630&fit=crop">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.duvanearchitectural.com/categories.html">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <style>
+    /* ----- RESET & VARIABLES (identical to about/terms) ----- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    :root {
+      --bg: #faf9f7;
+      --surface: #ffffff;
+      --text: #1e1e1e;
+      --text-light: #4a4a4a;
+      --text-muted: #6b6b6b;
+      --border: #e0ddd8;
+      --accent: #9b7b5e;
+      --accent-hover: #7d6047;
+      --shadow-sm: 0 2px 8px rgba(0,0,0,0.02);
+      --radius: 4px;
+      --font-serif: 'Playfair Display', Georgia, serif;
+      --font-sans: 'Inter', -apple-system, Helvetica, sans-serif;
+      --max-width: 1280px;
+    }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: var(--font-sans);
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+    h1, h2, h3, h4 {
+      font-family: var(--font-serif);
+      font-weight: 500;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+    }
+    h1 { font-size: 2.6rem; }
+    h2 { font-size: 2rem; margin-bottom: 1rem; }
+    h3 { font-size: 1.4rem; margin-bottom: 0.5rem; }
+    p {
+      color: var(--text-light);
+      margin-bottom: 1.25rem;
+    }
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    /* ----- HEADER (identical) ----- */
+    .site-header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 20px 0;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(8px);
+      background: rgba(255,255,255,0.92);
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .logo {
+      font-family: var(--font-serif);
+      font-size: 1.8rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      line-height: 1.1;
+    }
+    .logo span {
+      display: block;
+      font-family: var(--font-sans);
+      font-size: 0.65rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      font-weight: 400;
+      margin-top: 2px;
+    }
+    .main-nav ul {
+      display: flex;
+      list-style: none;
+      gap: 28px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text-light);
+    }
+    .main-nav a:hover,
+    .main-nav a.active {
+      color: var(--accent);
+    }
+    .search-bar {
+      display: flex;
+      align-items: center;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 40px;
+      padding: 4px 8px 4px 18px;
+    }
+    .search-bar input {
+      border: none;
+      background: transparent;
+      padding: 8px 0;
+      font-family: var(--font-sans);
+      font-size: 0.9rem;
+      width: 180px;
+      outline: none;
+    }
+    .search-bar button {
+      background: var(--accent);
+      border: none;
+      color: #fff;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      transition: background 0.15s;
+    }
+    .search-bar button:hover {
+      background: var(--accent-hover);
+    }
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: 1px solid var(--border);
+      padding: 8px 12px;
+      border-radius: 30px;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+
+    /* ----- CATEGORIES PAGE SPECIFIC ----- */
+    .categories-hero {
+      padding: 64px 0 32px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 48px;
+    }
+    .categories-hero h1 {
+      font-size: 3.2rem;
+      max-width: 900px;
+      margin-bottom: 20px;
+    }
+    .categories-hero .lead {
+      font-size: 1.3rem;
+      color: var(--text-muted);
+      max-width: 800px;
+      line-height: 1.5;
+    }
+    .categories-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      margin-bottom: 64px;
+    }
+    .category-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px 28px 28px;
+      transition: transform 0.15s ease, box-shadow 0.2s ease, border-color 0.2s;
+      display: flex;
+      flex-direction: column;
+    }
+    .category-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.04);
+      border-color: #d6d0c8;
+    }
+    .category-icon {
+      font-size: 2.2rem;
+      margin-bottom: 16px;
+      line-height: 1;
+      color: var(--accent);
+    }
+    .category-card h2 {
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+      font-weight: 500;
+    }
+    .category-card p {
+      font-size: 0.98rem;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+      flex: 1;
+    }
+    .category-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border);
+      padding-top: 18px;
+      margin-top: 8px;
+    }
+    .category-meta span:last-child {
+      color: var(--accent);
+      font-weight: 500;
+    }
+    .featured-category {
+      grid-column: span 3;
+      display: grid;
+      grid-template-columns: 1.2fr 2fr;
+      gap: 0;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      margin-bottom: 32px;
+      transition: box-shadow 0.2s;
+    }
+    .featured-category:hover {
+      box-shadow: 0 8px 24px rgba(0,0,0,0.03);
+    }
+    .featured-image {
+      background: #e8e4df;
+      min-height: 240px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3.5rem;
+      color: #b1a69b;
+    }
+    .featured-content {
+      padding: 40px 44px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .featured-content h2 {
+      font-size: 2rem;
+      margin-bottom: 12px;
+    }
+    .featured-content p {
+      font-size: 1.05rem;
+      color: var(--text-light);
+      margin-bottom: 24px;
+    }
+    .featured-badge {
+      display: inline-block;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    .category-count {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    /* ----- FOOTER (identical) ----- */
+    .site-footer {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      padding: 48px 0 32px;
+      margin-top: 48px;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+    .footer-grid h4 {
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+    }
+    .footer-grid ul {
+      list-style: none;
+    }
+    .footer-grid li {
+      margin-bottom: 10px;
+      font-size: 0.9rem;
+      color: var(--text-light);
+    }
+    .footer-grid a:hover {
+      color: var(--accent);
+    }
+    .copyright {
+      border-top: 1px solid var(--border);
+      padding-top: 24px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    /* ----- RESPONSIVE ----- */
+    @media (max-width: 1024px) {
+      .categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+      }
+      .featured-category {
+        grid-column: span 2;
+        grid-template-columns: 1fr 1.5fr;
+      }
+    }
+    @media (max-width: 768px) {
+      .main-nav ul {
+        display: none;
+      }
+      .menu-toggle {
+        display: block;
+      }
+      .header-inner {
+        justify-content: space-between;
+      }
+      .search-bar input {
+        width: 120px;
+      }
+      h1 { font-size: 2rem; }
+      .categories-hero h1 { font-size: 2.2rem; }
+      .categories-hero .lead { font-size: 1.1rem; }
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .categories-grid {
+        grid-template-columns: 1fr;
+      }
+      .featured-category {
+        grid-column: span 1;
+        grid-template-columns: 1fr;
+      }
+      .featured-image {
+        min-height: 160px;
+        font-size: 2.8rem;
+      }
+      .featured-content {
+        padding: 28px 24px;
+      }
+    }
+    @media (max-width: 480px) {
+      .container { padding: 0 16px; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .category-card {
+        padding: 24px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Duvane Architectural Matter home">
+        Duvane<span>Architectural Matter</span>
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="terms.html">Terms Of Privacy</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="cookies.html">Cookies Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="categories.html" class="active">Categories</a></li>
+        </ul>
+      </nav>
+      <div style="display:flex; align-items:center; gap:12px;">
+        <div class="search-bar">
+          <input type="text" id="searchInput" placeholder="Search articles…" aria-label="Search articles">
+          <button id="searchBtn" aria-label="Submit search">⌕</button>
+        </div>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== MAIN ========== -->
+  <main class="container">
+    <!-- Hero -->
+    <section class="categories-hero">
+      <h1>Categories</h1>
+      <p class="lead">Browse our editorial sections — from architectural theory to practical material guides. Every article is independent and reader-supported.</p>
+    </section>
+
+    <!-- Featured category (spanning) -->
+    <div class="featured-category">
+      <div class="featured-image">🏛️</div>
+      <div class="featured-content">
+        <span class="featured-badge">Featured category</span>
+        <h2>Architecture</h2>
+        <p>Critical essays, building studies, and conversations with practitioners. We explore how architecture shapes daily life — from public spaces to private dwellings, from adaptive reuse to new construction.</p>
+        <div class="category-meta" style="border-top: none; padding-top: 0; margin-top: 8px;">
+          <span>48 articles</span>
+          <span>Explore →</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category grid -->
+    <div class="categories-grid">
+      <!-- Interior Design -->
+      <div class="category-card">
+        <div class="category-icon">🪑</div>
+        <h2>Interior Design</h2>
+        <p>Rooms that work: colour, texture, furniture, and the quiet details that make a space feel intentional. We look at both residential and commercial interiors.</p>
+        <div class="category-meta">
+          <span>36 articles</span>
+          <span>View →</span>
+        </div>
+      </div>
+
+      <!-- Materials -->
+      <div class="category-card">
+        <div class="category-icon">🧱</div>
+        <h2>Materials</h2>
+        <p>From timber and stone to innovative composites. We trace where materials come from, how they age, and why they matter for sustainable design.</p>
+        <div class="category-meta">
+          <span>29 articles</span>
+          <span>View →</span>
+        </div>
+      </div>
+
+      <!-- Lighting -->
+      <div class="category-card">
+        <div class="category-icon">💡</div>
+        <h2>Lighting</h2>
+        <p>Natural and artificial light as a building material. Guides to fixtures, daylighting strategies, and the psychology of illumination.</p>
+        <div class="category-meta">
+          <span>18 articles</span>
+          <span>View →</span>
+        </div>
+      </div>
+
+      <!-- Small Spaces -->
+      <div class="category-card">
+        <div class="category-icon">📐</div>
+        <h2>Small Spaces</h2>
+        <p>Compact living, micro-apartments, and clever spatial solutions. Proof that limited square footage can still be generous and beautiful.</p>
+        <div class="category-meta">
+          <span>22 articles</span>
+          <span>View →</span>
+        </div>
+      </div>
+
+      <!-- Adaptive Reuse -->
+      <div class="category-card">
+        <div class="category-icon">🔄</div>
+        <h2>Adaptive Reuse</h2>
+        <p>Old buildings, new purposes. We examine conversions, renovations, and the sustainability case for keeping what already stands.</p>
+        <div class="category-meta">
+          <span>14 articles</span>
+          <span>View →</span>
+        </div>
+      </div>
+
+      <!-- Landscape -->
+      <div class="category-card">
+        <div class="category-icon">🌿</div>
+        <h2>Landscape</h2>
+        <p>Gardens, courtyards, and the relationship between buildings and their surroundings. Where architecture meets ecology.</p>
+        <div class="category-meta">
+          <span>11 articles</span>
+          <span>View →</span>
+        </div>
+      </div>
+
+      <!-- Theory & Criticism -->
+      <div class="category-card">
+        <div class="category-icon">📖</div>
+        <h2>Theory & Criticism</h2>
+        <p>Long-form essays and critical perspectives on the built environment. Ideas that challenge how we think about design.</p>
+        <div class="category-meta">
+          <span>17 articles</span>
+          <span>View →</span>
+        </div>
+      </div>
+
+      <!-- Profiles -->
+      <div class="category-card">
+        <div class="category-icon">👤</div>
+        <h2>Profiles</h2>
+        <p>Conversations with architects, designers, makers, and thinkers. The people behind the buildings and objects we admire.</p>
+        <div class="category-meta">
+          <span>24 articles</span>
+          <span>View →</span>
+        </div>
+      </div>
+
+      <!-- Details & Craft -->
+      <div class="category-card">
+        <div class="category-icon">🔨</div>
+        <h2>Details & Craft</h2>
+        <p>Joints, finishes, hardware, and the small decisions that elevate a project. A celebration of making and material intelligence.</p>
+        <div class="category-meta">
+          <span>20 articles</span>
+          <span>View →</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="logo" style="font-size:1.6rem;">Duvane<span>Architectural Matter</span></div>
+          <p style="margin-top:16px; font-size:0.9rem; max-width:300px;">An independent journal of interior design, architecture and material culture.</p>
+        </div>
+        <div>
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="#">Interior Design</a></li>
+            <li><a href="#">Architecture</a></li>
+            <li><a href="#">Materials</a></li>
+            <li><a href="#">Lighting</a></li>
+            <li><a href="#">Small Spaces</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Information</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="cookies.html">Cookie Policy</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Follow</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">RSS</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        © 2025 Duvane Architectural Matter. All rights reserved. Original content, no reproduction without permission.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== JAVASCRIPT (menu toggle and search) ========== -->
+  <script>
+    (function() {
+      // Mobile menu toggle
+      const menuToggle = document.getElementById('menuToggle');
+      const mainNav = document.querySelector('.main-nav ul');
+      if (menuToggle) {
+        menuToggle.addEventListener('click', function() {
+          if (mainNav.style.display === 'flex' || mainNav.style.display === '') {
+            mainNav.style.display = 'none';
+          } else {
+            mainNav.style.display = 'flex';
+            mainNav.style.flexDirection = 'column';
+            mainNav.style.position = 'absolute';
+            mainNav.style.top = '80px';
+            mainNav.style.left = '24px';
+            mainNav.style.right = '24px';
+            mainNav.style.background = '#fff';
+            mainNav.style.padding = '24px';
+            mainNav.style.border = '1px solid #e0ddd8';
+            mainNav.style.borderRadius = '4px';
+            mainNav.style.gap = '16px';
+            mainNav.style.zIndex = '100';
+          }
+        });
+      }
+
+      // Simple search redirect (placeholder for consistency)
+      const searchBtn = document.getElementById('searchBtn');
+      const searchInput = document.getElementById('searchInput');
+      if (searchBtn && searchInput) {
+        searchBtn.addEventListener('click', function() {
+          const q = searchInput.value.trim();
+          if (q) {
+            alert('Search for: "' + q + '" (demo only)');
+          }
+        });
+        searchInput.addEventListener('keyup', function(e) {
+          if (e.key === 'Enter') {
+            const q = searchInput.value.trim();
+            if (q) {
+              alert('Search for: "' + q + '" (demo only)');
+            }
+          }
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

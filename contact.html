@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact · Duvane Architectural Matter</title>
+  <meta name="description" content="Get in touch with Duvane Architectural Matter. Editorial inquiries, submissions, and general questions.">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact · Duvane Architectural Matter">
+  <meta property="og:description" content="Get in touch with the editorial team.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.duvanearchitectural.com/contact.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=630&fit=crop">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://www.duvanearchitectural.com/contact.html">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <style>
+    /* ----- RESET & VARIABLES (same as main) ----- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    :root {
+      --bg: #faf9f7;
+      --surface: #ffffff;
+      --text: #1e1e1e;
+      --text-light: #4a4a4a;
+      --text-muted: #6b6b6b;
+      --border: #e0ddd8;
+      --accent: #9b7b5e;
+      --accent-hover: #7d6047;
+      --shadow-sm: 0 2px 8px rgba(0,0,0,0.02);
+      --radius: 4px;
+      --font-serif: 'Playfair Display', Georgia, serif;
+      --font-sans: 'Inter', -apple-system, Helvetica, sans-serif;
+      --max-width: 1280px;
+    }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: var(--font-sans);
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+    h1, h2, h3, h4 {
+      font-family: var(--font-serif);
+      font-weight: 500;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+    }
+    h1 { font-size: 2.6rem; }
+    h2 { font-size: 2rem; margin-bottom: 1rem; }
+    h3 { font-size: 1.4rem; margin-bottom: 0.5rem; }
+    p {
+      color: var(--text-light);
+      margin-bottom: 1.25rem;
+    }
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    /* ----- HEADER (exactly as main) ----- */
+    .site-header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 20px 0;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(8px);
+      background: rgba(255,255,255,0.92);
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .logo {
+      font-family: var(--font-serif);
+      font-size: 1.8rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      line-height: 1.1;
+    }
+    .logo span {
+      display: block;
+      font-family: var(--font-sans);
+      font-size: 0.65rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      font-weight: 400;
+      margin-top: 2px;
+    }
+    .main-nav ul {
+      display: flex;
+      list-style: none;
+      gap: 28px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text-light);
+    }
+    .main-nav a:hover,
+    .main-nav a.active {
+      color: var(--accent);
+    }
+    .search-bar {
+      display: flex;
+      align-items: center;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 40px;
+      padding: 4px 8px 4px 18px;
+    }
+    .search-bar input {
+      border: none;
+      background: transparent;
+      padding: 8px 0;
+      font-family: var(--font-sans);
+      font-size: 0.9rem;
+      width: 180px;
+      outline: none;
+    }
+    .search-bar button {
+      background: var(--accent);
+      border: none;
+      color: #fff;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      transition: background 0.15s;
+    }
+    .search-bar button:hover {
+      background: var(--accent-hover);
+    }
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: 1px solid var(--border);
+      padding: 8px 12px;
+      border-radius: 30px;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+    /* ----- CONTACT PAGE SPECIFIC ----- */
+    .contact-header {
+      padding: 48px 0 16px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 48px;
+    }
+    .contact-header h1 {
+      max-width: 800px;
+      font-size: 2.8rem;
+      margin-bottom: 12px;
+    }
+    .contact-header p {
+      max-width: 700px;
+      font-size: 1.2rem;
+      color: var(--text-muted);
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 380px;
+      gap: 56px;
+      margin-bottom: 64px;
+    }
+    /* form */
+    .contact-form {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 36px;
+    }
+    .contact-form h2 {
+      font-size: 1.8rem;
+      margin-bottom: 8px;
+    }
+    .contact-form .subhead {
+      color: var(--text-muted);
+      margin-bottom: 32px;
+      font-size: 0.95rem;
+    }
+    .form-group {
+      margin-bottom: 24px;
+    }
+    .form-group label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      padding: 14px 16px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      background: var(--bg);
+      transition: border-color 0.15s;
+    }
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+    .form-group textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .btn-submit {
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      padding: 16px 32px;
+      border-radius: var(--radius);
+      font-weight: 600;
+      font-size: 0.95rem;
+      font-family: var(--font-sans);
+      cursor: pointer;
+      transition: background 0.15s;
+      width: 100%;
+      letter-spacing: 0.02em;
+    }
+    .btn-submit:hover {
+      background: var(--accent-hover);
+    }
+    /* contact info sidebar */
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+    .info-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px;
+    }
+    .info-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+    }
+    .info-card p {
+      font-size: 0.95rem;
+      margin-bottom: 8px;
+    }
+    .info-card .label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
+      font-weight: 600;
+      margin-bottom: 4px;
+      display: block;
+    }
+    .info-card .value {
+      font-size: 1rem;
+      color: var(--text);
+      margin-bottom: 16px;
+      display: block;
+    }
+    .info-card .value a {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    .info-card .value a:hover {
+      color: var(--accent);
+    }
+    .social-links {
+      display: flex;
+      gap: 16px;
+      margin-top: 8px;
+    }
+    .social-links a {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--accent);
+    }
+    .social-links a:hover {
+      color: var(--accent-hover);
+      text-decoration: underline;
+    }
+    .map-placeholder {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      background-image: url('https://images.unsplash.com/photo-1524661135-423995f22d0b?w=600&h=300&fit=crop');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .map-placeholder::after {
+      content: "Map preview — Duvane HQ, Copenhagen";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(255,255,255,0.92);
+      padding: 10px 16px;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-align: center;
+      letter-spacing: 0.02em;
+    }
+    /* footer */
+    .site-footer {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      padding: 48px 0 32px;
+      margin-top: 48px;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+    .footer-grid h4 {
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+    }
+    .footer-grid ul {
+      list-style: none;
+    }
+    .footer-grid li {
+      margin-bottom: 10px;
+      font-size: 0.9rem;
+      color: var(--text-light);
+    }
+    .footer-grid a:hover {
+      color: var(--accent);
+    }
+    .copyright {
+      border-top: 1px solid var(--border);
+      padding-top: 24px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+    /* responsive */
+    @media (max-width: 1024px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    @media (max-width: 768px) {
+      .main-nav ul {
+        display: none;
+      }
+      .menu-toggle {
+        display: block;
+      }
+      .header-inner {
+        justify-content: space-between;
+      }
+      .search-bar input {
+        width: 120px;
+      }
+      h1 { font-size: 2rem; }
+      .contact-header h1 { font-size: 2rem; }
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    @media (max-width: 480px) {
+      .container { padding: 0 16px; }
+      .contact-header h1 { font-size: 1.8rem; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .contact-form { padding: 24px; }
+    }
+  </style>
+</head>
+<body>
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Duvane Architectural Matter home">
+        Duvane<span>Architectural Matter</span>
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="terms.html">Terms Of Privacy</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="cookies.html">Cookies Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="categories.html">Categories</a></li>
+        </ul>
+      </nav>
+      <div style="display:flex; align-items:center; gap:12px;">
+        <div class="search-bar">
+          <input type="text" id="searchInput" placeholder="Search articles…" aria-label="Search articles">
+          <button id="searchBtn" aria-label="Submit search">⌕</button>
+        </div>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== MAIN ========== -->
+  <main class="container">
+    <!-- contact header -->
+    <section class="contact-header">
+      <h1>Get in touch</h1>
+      <p>We welcome editorial inquiries, article pitches, and general questions about Duvane Architectural Matter.</p>
+    </section>
+
+    <!-- contact grid -->
+    <div class="contact-grid">
+      <!-- left: form -->
+      <div class="contact-form">
+        <h2>Send us a message</h2>
+        <p class="subhead">We typically respond within two business days.</p>
+        <form id="contactForm" action="#" method="post">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject">
+              <option value="general">General inquiry</option>
+              <option value="editorial">Editorial / pitch</option>
+              <option value="advertising">Advertising</option>
+              <option value="press">Press & media</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell us how we can help…" required></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Send message</button>
+        </form>
+      </div>
+
+      <!-- right: info -->
+      <aside class="contact-info">
+        <div class="info-card">
+          <h3>Editorial office</h3>
+          <span class="label">Address</span>
+          <span class="value">Duvane Architectural Matter<br>Bredgade 24, 2nd floor<br>1260 Copenhagen K, Denmark</span>
+          <span class="label">Email</span>
+          <span class="value"><a href="mailto:editor@duvanearchitectural.com">editor@duvanearchitectural.com</a></span>
+          <span class="label">Phone</span>
+          <span class="value">+45 33 12 34 56</span>
+        </div>
+        <div class="info-card">
+          <h3>Follow the journal</h3>
+          <p style="font-size:0.95rem; margin-bottom:16px;">Daily inspiration, new articles and behind-the-scenes notes.</p>
+          <div class="social-links">
+            <a href="#">Instagram</a>
+            <a href="#">Pinterest</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">RSS</a>
+          </div>
+        </div>
+        <div class="map-placeholder"></div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="logo" style="font-size:1.6rem;">Duvane<span>Architectural Matter</span></div>
+          <p style="margin-top:16px; font-size:0.9rem; max-width:300px;">An independent journal of interior design, architecture and material culture.</p>
+        </div>
+        <div>
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="#">Interior Design</a></li>
+            <li><a href="#">Architecture</a></li>
+            <li><a href="#">Materials</a></li>
+            <li><a href="#">Lighting</a></li>
+            <li><a href="#">Small Spaces</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Information</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="cookies.html">Cookie Policy</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Follow</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">RSS</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        © 2025 Duvane Architectural Matter. All rights reserved. Original content, no reproduction without permission.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== JAVASCRIPT ========== -->
+  <script>
+    (function() {
+      // ---------- CONTACT FORM HANDLER ----------
+      const contactForm = document.getElementById('contactForm');
+      if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          // simple feedback
+          const btn = this.querySelector('.btn-submit');
+          const originalText = btn.textContent;
+          btn.textContent = 'Message sent ✓';
+          btn.style.background = '#7d6047';
+          btn.disabled = true;
+          setTimeout(() => {
+            btn.textContent = originalText;
+            btn.style.background = '';
+            btn.disabled = false;
+            this.reset();
+          }, 3000);
+          alert('Thank you — your message has been received. We will reply shortly.');
+        });
+      }
+
+      // ---------- MOBILE MENU TOGGLE (same as main) ----------
+      const menuToggle = document.getElementById('menuToggle');
+      const mainNav = document.querySelector('.main-nav ul');
+      if (menuToggle) {
+        menuToggle.addEventListener('click', function() {
+          if (mainNav.style.display === 'flex' || mainNav.style.display === '') {
+            mainNav.style.display = 'none';
+          } else {
+            mainNav.style.display = 'flex';
+            mainNav.style.flexDirection = 'column';
+            mainNav.style.position = 'absolute';
+            mainNav.style.top = '80px';
+            mainNav.style.left = '24px';
+            mainNav.style.right = '24px';
+            mainNav.style.background = '#fff';
+            mainNav.style.padding = '24px';
+            mainNav.style.border = '1px solid #e0ddd8';
+            mainNav.style.borderRadius = '4px';
+            mainNav.style.gap = '16px';
+            mainNav.style.zIndex = '100';
+          }
+        });
+      }
+
+      // ---------- SEARCH BAR (non-functional placeholder on contact page) ----------
+      const searchBtn = document.getElementById('searchBtn');
+      const searchInput = document.getElementById('searchInput');
+      if (searchBtn && searchInput) {
+        searchBtn.addEventListener('click', function() {
+          alert('Search is available on the home page.');
+        });
+        searchInput.addEventListener('keyup', function(e) {
+          if (e.key === 'Enter') {
+            alert('Search is available on the home page.');
+          }
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
